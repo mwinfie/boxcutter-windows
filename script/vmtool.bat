@@ -283,6 +283,9 @@ if "%GUEST_OS%" == "Windows Server 2016" goto :exit0
 ::Install the patch using the following command:
 ::  Add-WindowsPackage -Online -PackagePath $integrationServicesCabPath
 
+::virtualbox-iso: This version of C:\Windows\wget.exe is not compatible with the version of Windows you're running.
+:: Check your computer's system information and then contact the software publisher.
+
 goto :exit0
 
 :exit0
